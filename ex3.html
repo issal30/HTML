@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ex3.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <a
+      href="https://api.whatsapp.com/send?phone=6283831206507&text=Saya%20Mau%20Konsultasi%20Nih%20Kak"
+      ><img src="whatsapp-green.png" class="wa"
+    /></a>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="miw.jpeg" style="width: 70px; border-radius: 50%" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                style="font-family: 'Times New Roman'; font-size: 15px"
+                href="#"
+                >PROFIL</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="font-family: 'Times New Roman'; font-size: 15px"
+                href="#"
+                >CABANG</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="font-family: 'Times New Roman'; font-size: 15px"
+              >
+                DOKUMENTASI
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">UMROH</a></li>
+                <li><a class="dropdown-item" href="#">HAJI</a></li>
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="data:image/png;base64,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"
+            style="width: 150px; padding-left: 20px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        </div>
+      </div>
+      <div class="navbar-collapse collapse dual-collapse2 nav-right">
+        <p style="padding: 10px 30px; font-weight: bold">Beranda</p>
+        <p style="padding: 10px 30px; font-weight: bold">Tes Diagnostik</p>
+        <p style="padding: 10px 30px; font-weight: bold">Sumber Belajar</p>
+        <p style="padding: 10px 30px; font-weight: bold">Tutor</p>
+
+        <button class="nav-btn">Mulai Menulis</button>
+      </div>
+    </nav>
+    <br /><br />
+
+    <div style="display: flex; margin-top: 80px">
+      <div style="width: 50%">
+        <img src="book.png" />
+      </div>
+      <div style="width: 50%; position: relative; height: 450px">
+        <div style="position: absolute; z-index: 1">
+          <p class="text-header">Mari Mahir<br />Menulis</p>
+          <p class="text-footer">Karena menulis itu menyenangkan ...</p>
+          <button class="text-btn">Mulai Menulis</button>
+        </div>
+        <img
+          src="vector.png"
+          style="position: absolute; bottom: 30px; right: 0px"
+        />
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center">
+      <div style="margin-top: 20px; width: 1000px">
+        <h2
+          style="
+            font-weight: bold;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 20px;
+          "
+        >
+          Mengapa KAWAN MENULIS bermanfaat?
+        </h2>
+        <p style="font-size: 25px">
+          Seiring kemajuan mahasiswa, untuk meningkatkan keterampilan menulis
+          mereka membutuhkan dukungan mendalam. Mereka perlu mengatur pemikiran
+          mereka dan belajar untuk mengkomunikasikan ide-ide mereka secara
+          tertulis dengan jelas. Keberagaman konteks penggunaan Bahasa Indonesia
+          di dalam keterampilan menulis menjadi tantangan tersendiri bagi
+          mahasiswa di dalam menulis paragraf. Hal ini sejalan dengan tugas
+          sumatif di perguruan tinggi dalam membuat tulisan ilmiah.
+        </p>
+      </div>
+    </div>
+    <div style="background-color: rgb(223, 215, 215)">
+      <div style="width: 910px; padding: 20px 0px; margin-left: 100px">
+        <h1 style="font-weight: bold">
+          "If there's a book that you want to read, but it hasn't been written
+          yet, then you must write it."
+        </h1>
+        <p>Toni Morrison</p>
+      </div>
+    </div>
+    <div style="display: flex; margin: 100px 40px 30px 40px">
+      <div style="width: 50%">
+        <img src="http://staging.kawanmenulis.com/img/frame.f57df86d.png" />
+      </div>
+      <div
+        style="
+          width: 50%;
+          display: flex;
+          margin-left: 100px;
+          align-items: center;
+        "
+      >
+        <div style="width: 400px">
+          <p style="font-weight: bold; font-size: 30px">
+            Apa itu KAWAN MENULIS?
+          </p>
+          <p style="font-size: 20px">
+            Merupakan website yang didesain untuk membantu mahasiswa tingkat
+            perguruan tinggi dalam mendukung keterampilan menulis paragraf yang
+            baik dan benar.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center">
+      <div style="width: 1000px">
+        <p style="font-weight: bold; font-size: 30px; text-align: center">
+          Bagaimana KAWAN MENULIS dapat membantu saya menulis?
+        </p>
+        <p style="font-size: 23px">
+          Website ini didesain dengan melihat kebutuhan generasi muda yang penuh
+          dengan daya kreasi dan inovasi. Kesempatan untuk melakukan tes
+          diagnostik mandiri, mulai menulis, dan fitur bertemu tutor akan
+          semakin memperlengkapi cara penulisan paragraf yang baik dan benar.
+        </p>
+      </div>
+    </div>
+    <div style="background-color: aqua">
+      <div style="justify-content: center; padding: 30px 0px">
+        <p style="font-weight: bold; font-size: 40px; text-align: center">
+          KETAHUI KEMAMPUAN MENULISMU
+        </p>
+        <button
+          style="
+            border: none;
+            background-color: rgb(66, 211, 114);
+            border-radius: 35px;
+            color: white;
+            font-weight: bold;
+            padding: 10px 30px;
+            margin: 0 auto;
+            display: block;
+          "
+        >
+          TEST DIAGNOSTIK
+        </button>
+      </div>
+    </div>
+    <div style="background-color: rgb(90, 82, 82); color: white; height: 200px">
+      <div style="display: flex; padding: 20px 40px">
+        <div>
+          <img
+            src="data:image/png;base64,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"
+          />
+        </div>
+        <div style="width: 300px; margin-left: 50px">
+          <p>
+            Merupakan website yang didesain untuk membantu mahasiswa tingkat
+            perguruan tinggi dalam mendukung keterampilan menulis paragraf yang
+            baik dan benar.
+          </p>
+        </div>
+        <div style="line-height: 10px; margin-left: 50px; padding-top: 10px">
+          <p>Beranda</p>
+          <p>Tes Diagnostik</p>
+          <p>Belajar Menulis</p>
+        </div>
+        <div style="line-height: 10px; margin-left: 200px; padding-top: 10px">
+          <p>Sumber Belajar</p>
+          <p>Tutor</p>
+          <p>Tentang Kami</p>
+        </div>
+      </div>
+      <p style="text-align: center">
+        Copyright © 2021. Tim Pengembang Proyek Menulis UPH Teachers College.
+        All rights reserved.
+      </p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

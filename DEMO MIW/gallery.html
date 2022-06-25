@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Madinah Iman Wisata Semarang</title>
+    <link rel="icon" href="wim.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      .grid {
+        column-count: 3;
+        column-gap: 10px;
+      }
+      .grid img {
+        width: 380px;
+        border-radius: 20px;
+        margin: 5px 15px;
+      }
+
+      @media screen and (max-width: 450px) {
+        .grid {
+          column-count: unset;
+          column-gap: 0px;
+        }
+        .grid img {
+          width: 100%;
+          margin: 5px 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="demo-miw.html"
+          ><img src="wim.png" style="width: 100px; height: auto" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div
+        class="navbar-collapse collapse dual-collapse2 nav-right"
+        id="navbarSupportedContent"
+        style="margin-right: 20px"
+      >
+        <ul
+          class="navbar-nav me-auto mb-2 mb-lg-0"
+          style="
+            padding-right: 70px;
+            font-family: 'Arial';
+            font-size: 15px;
+            font-weight: bold;
+          "
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="Live-makkah.html"
+              style="width: 120px"
+              >LIVE MAKKAH</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="profil.html"
+              >PROFIL</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="gallery.html"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              GALLERY
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a href="login.html"
+            ><button
+              class="btn btn-warning"
+              type="button"
+              style="font-family: 'Arial'; font-size: 13px; font-weight: bold"
+            >
+              Login
+            </button></a
+          >
+        </form>
+      </div>
+    </nav>
+    <div
+      style="
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(245, 245, 227);
+      "
+    >
+      <div style="width: 85%; padding-top: 50px">
+        <h2 style="text-align: center; font-family: inherit; font-weight: 600">
+          Gallery
+          <font style="color: rgb(223, 186, 21)">Madinah Iman Wisata</font>
+        </h2>
+        <div class="grid">
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.05.06.jpeg" />
+          <img src="./Gallery/PESAWAT.jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.09.06.jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.09.05 (1).jpeg" />
+
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.05.07.jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.07.22 (1).jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.07.22 (2).jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.07.21 (2).jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.11.02.jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.07.18.jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.11.05.jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.11.03 (1).jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.07.20.jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.05.06 (1).jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.07.20 (2).jpeg" />
+          <img src="./Gallery/WhatsApp Image 2022-03-16 at 14.13.39 (1).jpeg" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

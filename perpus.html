@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body
+    style="
+      background-image: url('https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105__480.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin: 0;
+    "
+  >
+    <div
+      style="
+        height: 60px;
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        box-shadow: 3px 0px 8px black;
+        padding: 10px 0px;
+      "
+    >
+      <div style="width: 70%; height: 60px; display: flex">
+        <div style="width: 50%; border: 1px solid">
+          <img
+            src="https://perpustakaan-green.vercel.app/img/logo-unaki-220.72f8ccf3.png"
+            style="width: 160px"
+          />
+        </div>
+        <div
+          style="
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            justify-content: right;
+            border: 1px solid;
+          "
+        >
+          <p>Home</p>
+          <p>Logout</p>
+          <p>Modifikasi</p>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center">
+      <div style="width: 70%; background-color: white; border-radius: 5px">
+        <div style="display: flex; padding: 10px">
+          <div style="width: 40%">
+            <div
+              style="
+                box-shadow: 0px 4px 4px rgba(18, 18, 18, 0.16);
+                padding: 5px;
+                text-align: center;
+              "
+            >
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+              <hr />
+              <p
+                style="
+                  background-color: grey;
+                  font-size: 30px;
+
+                  border-radius: 5px 5px 0px 0px;
+                  font-weight: bold;
+                "
+              >
+                BUKU TERPOPULER
+              </p>
+              <p>Pemrograman Dasar</p>
+              <hr />
+              <p>DATABASE</p>
+              <hr />
+              <p>DESAIN WEB</p>
+              <hr />
+            </div>
+            <div
+              style="
+                box-shadow: 0px 4px 4px rgba(18, 18, 18, 0.16);
+                padding: 5px;
+                text-align: center;
+                margin-top: 50px;
+              "
+            >
+              <p
+                style="
+                  background-color: grey;
+                  font-size: 30px;
+                  text-align: center;
+                  border-radius: 5px 5px 0px 0px;
+                  font-weight: bold;
+                "
+              >
+                KATEGORI BUKU
+              </p>
+              <p>Pemrograman Python</p>
+              <hr />
+              <p>HTML dan CSS</p>
+              <hr />
+            </div>
+            <div
+              style="
+                box-shadow: 0px 4px 4px rgba(18, 18, 18, 0.16);
+                padding: 5px;
+                text-align: center;
+                margin-top: 50px;
+              "
+            >
+              <p
+                style="
+                  background-color: grey;
+                  font-size: 20px;
+                  text-align: center;
+                  border-radius: 5px 5px 0px 0px;
+                  font-weight: bold;
+                  padding: 5px;
+                "
+              >
+                Buku yang baru ditambahkan
+              </p>
+              <p>Buku modul (1)</p>
+              <hr />
+              <p>Novel (3)</p>
+              <hr />
+            </div>
+          </div>
+
+          <div style="width: 60%; padding: 10px">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://jagokata.com/images/upload/tyas-effendi-membaca-novel-terjemahan-itu-sama-aja-dengan-makan-jeruk.jpg"
+                    class="d-block h-10"
+                    style="height: 300px"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://cdn1-production-images-kly.akamaized.net/QucUsHT603jc3c-xIqRt1xSdYiU=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3245050/original/031924900_1600748267-pexels-wallace-chuck-3728084.jpg"
+                    class="d-block h-10"
+                    style="height: 300px"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://cdn1-production-images-kly.akamaized.net/gSC6NbS-BBANJeymcxv3gOF7n8g=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2785580/original/040282500_1556002609-iStock-899906832.jpg"
+                    class="d-block h-10"
+                    style="height: 300px"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p
+              style="
+                font-family: Britannic Bold;
+                text-align: center;
+                padding: 20px;
+                font-size: 35px;
+              "
+            >
+              Selamat Datang
+            </p>
+            <p
+              style="
+                font-family: Vivaldi;
+                font-size: 40px;
+                text-align: center;
+                margin-top: -30px;
+              "
+            >
+              Gemar Membaca Wujudkan Cita
+            </p>
+            <p
+              style="
+                background-color: rgb(240, 205, 210);
+                text-align: center;
+                font-size: 20px;
+              "
+            >
+              DAFTAR BUKU
+            </p>
+            <div
+              style="
+                margin: 20px 0px;
+                display: grid;
+                grid-template-columns: repeat(4, 140px);
+                margin-left: -10px;
+                text-align: center;
+              "
+            >
+              <div
+                style="
+                  box-shadow: 0px 4px 4px rgba(18, 18, 18, 0.16);
+                  margin: 0px 10px;
+                  padding: 10px;
+                "
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJnPgl-RRz3m_0nqoamQT_mCzvbztCrQEMhQ&usqp=CAU"
+                  style="width: 100px"
+                />
+                <p>Database Design</p>
+              </div>
+              <div
+                style="
+                  box-shadow: 0px 4px 4px rgba(18, 18, 18, 0.16);
+                  margin: 0px 10px;
+                  padding: 10px;
+                "
+              >
+                <img
+                  src="https://elibrary.bsi.ac.id/assets/images/buku/203402.jpeg"
+                  style="width: 100px"
+                />
+                <p>Pengantar Teknologi Informatika</p>
+              </div>
+              <div
+                style="
+                  box-shadow: 0px 4px 4px rgba(18, 18, 18, 0.16);
+                  margin: 0px 10px;
+                  padding: 10px;
+                "
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJnPgl-RRz3m_0nqoamQT_mCzvbztCrQEMhQ&usqp=CAU"
+                  style="width: 100px"
+                />
+                <p>Desain Web</p>
+              </div>
+              <div
+                style="
+                  box-shadow: 0px 4px 4px rgba(18, 18, 18, 0.16);
+                  margin: 0px 10px;
+                  padding: 10px;
+                "
+              >
+                <img
+                  src="https://elibrary.bsi.ac.id/assets/images/buku/203402.jpeg"
+                  style="width: 100px"
+                />
+                <p>Pemrograman Dasar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          style="
+            text-align: center;
+            margin-top: 20px;
+            background-color: orange;
+            height: 45px;
+            margin-bottom: 0px;
+          "
+        >
+          Copyright @ 2022 Universitas AKI
+        </p>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

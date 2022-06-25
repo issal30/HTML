@@ -1,0 +1,48 @@
+.wa {
+  width: 60px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1;
+}
+.wa:hover {
+  box-shadow: 1px 1px 15px black;
+}
+.nav-right {
+  margin-right: 20px;
+  width: 150%;
+  color: white;
+  margin-bottom: -15px;
+}
+.nav-btn {
+  border: none;
+  background-color: rgb(20, 218, 102);
+  color: white;
+  border-radius: 16px;
+  font-weight: bold;
+  padding: 5px 20px;
+  margin-top: -13px;
+}
+.text-header {
+  font-size: 85px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  line-height: 90px;
+}
+.text-footer {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -20px;
+  font-size: 30px;
+}
+.text-btn {
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(19, 212, 77);
+  color: white;
+  padding: 13px;
+  width: 130px;
+  cursor: pointer;
+}
